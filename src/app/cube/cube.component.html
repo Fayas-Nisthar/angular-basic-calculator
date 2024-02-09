@@ -1,0 +1,18 @@
+
+<div class="container">
+    <h1 class="text-center fw-bolder">Cube</h1>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 border border-2 shadow p-4">
+            <div class="mb-3">
+                <label for="">Num</label>
+                <input type="text" class="form-control" placeholder="enter number" #b1>
+            </div>
+            <div class="mb-3">
+                <button (click)="cube(b1)" class="btn btn-primary">Cube</button>
+            </div>
+            <h5>output: {{result}}</h5>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
