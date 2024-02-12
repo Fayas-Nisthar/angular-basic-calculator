@@ -7,6 +7,9 @@ import { AdditionComponent } from './addition/addition.component';
 import { CubeComponent } from './cube/cube.component';
 import { MultiplicationComponent } from './multiplication/multiplication.component';
 import { DivisionComponent } from './division/division.component';
+import {FormsModule} from '@angular/forms';
+import { BmiComponent } from './bmi/bmi.component';
+import { TemperatureComponent } from './temperature/temperature.component'
 
 @NgModule({
   declarations: [
@@ -14,11 +17,14 @@ import { DivisionComponent } from './division/division.component';
     AdditionComponent,
     CubeComponent,
     MultiplicationComponent,
-    DivisionComponent
+    DivisionComponent,
+    BmiComponent,
+    TemperatureComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
