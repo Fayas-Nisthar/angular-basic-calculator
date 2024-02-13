@@ -7,9 +7,11 @@ import { AdditionComponent } from './addition/addition.component';
 import { CubeComponent } from './cube/cube.component';
 import { MultiplicationComponent } from './multiplication/multiplication.component';
 import { DivisionComponent } from './division/division.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { BmiComponent } from './bmi/bmi.component';
-import { TemperatureComponent } from './temperature/temperature.component'
+import { TemperatureComponent } from './temperature/temperature.component';
+import { LengthComponent } from './length/length.component';
+import { RegisterComponent } from './register/register.component'
 
 @NgModule({
   declarations: [
@@ -19,12 +21,15 @@ import { TemperatureComponent } from './temperature/temperature.component'
     MultiplicationComponent,
     DivisionComponent,
     BmiComponent,
-    TemperatureComponent
+    TemperatureComponent,
+    LengthComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

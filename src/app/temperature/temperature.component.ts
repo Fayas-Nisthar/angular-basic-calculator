@@ -14,6 +14,6 @@ export class TemperatureComponent {
 
   Tocelsius(){
     this.c=(5/9*(this.f-32))
-}
+  }
 
 }
