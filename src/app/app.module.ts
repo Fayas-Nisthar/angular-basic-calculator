@@ -11,7 +11,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { BmiComponent } from './bmi/bmi.component';
 import { TemperatureComponent } from './temperature/temperature.component';
 import { LengthComponent } from './length/length.component';
-import { RegisterComponent } from './register/register.component'
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { EmiComponent } from './emi/emi.component'
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { RegisterComponent } from './register/register.component'
     BmiComponent,
     TemperatureComponent,
     LengthComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoginComponent,
+    EmiComponent
   ],
   imports: [
     BrowserModule,

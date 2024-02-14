@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {FormGroup,FormControl} from '@angular/forms'
+import {FormGroup,FormControl,Validator, Validators} from '@angular/forms'
 
 @Component({
   selector: 'app-register',
@@ -10,11 +10,22 @@ export class RegisterComponent {
 
   regForm =new FormGroup(
     {
-      username:new FormControl(),
-      email:new FormControl(),
-      password:new FormControl()
+      username:new FormControl("",Validators.required),
+      email:new FormControl("@gmail.com",Validators.required),
+      password:new FormControl("",Validators.required)
     }
   )
+
+get username(){
+  return this.regForm.get("username")
+}
+get email(){
+  return this.regForm.get("email")
+}
+get password(){
+  return this.regForm.get("password")
+}
+
   signUp(){
     console.log(this.regForm.value);
     
