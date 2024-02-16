@@ -13,7 +13,8 @@ import { TemperatureComponent } from './temperature/temperature.component';
 import { LengthComponent } from './length/length.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
-import { EmiComponent } from './emi/emi.component'
+import { EmiComponent } from './emi/emi.component';
+import { NavComponent } from './nav/nav.component'
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { EmiComponent } from './emi/emi.component'
     LengthComponent,
     RegisterComponent,
     LoginComponent,
-    EmiComponent
+    EmiComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
